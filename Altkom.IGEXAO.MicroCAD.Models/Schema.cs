@@ -8,7 +8,20 @@ namespace Altkom.IGEXAO.MicroCAD.Models
     {
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        private string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+                OnPropertyChanged();
+            }
+        }
 
         public IList<Item> Items { get; set; }
     }

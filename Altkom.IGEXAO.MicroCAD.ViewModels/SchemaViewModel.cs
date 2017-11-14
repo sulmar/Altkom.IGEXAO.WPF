@@ -33,6 +33,7 @@ namespace Altkom.IGEXAO.MicroCAD.ViewModels
             Schema = schemasService.Get(1);
 
             Schema.Items = itemsService.Get();
+
         }
 
     }

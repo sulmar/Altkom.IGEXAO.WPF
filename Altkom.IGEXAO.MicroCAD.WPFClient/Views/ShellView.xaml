@@ -20,9 +20,9 @@
             <StackPanel 
                 DockPanel.Dock="Top"
                 Orientation="Horizontal">
-                <Button>Button 1</Button>
-                <Button>Button 2</Button>
-                <Button>Button 3</Button>
+                <Button Command="{Binding ShowWelcomeCommand}">Welcome</Button>
+                <Button>Schema</Button>
+                <Button Command="{Binding ChangeCommand}">Change</Button>
             </StackPanel>
             
           

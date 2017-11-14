@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.Common\Altkom.IGEXAO.MicroCAD.Common.csproj" />
     <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.IServices\Altkom.IGEXAO.MicroCAD.IServices.csproj" />
     <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.MockServices\Altkom.IGEXAO.MicroCAD.MockServices.csproj" />
     <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.Models\Altkom.IGEXAO.MicroCAD.Models.csproj" />
