@@ -6,9 +6,11 @@ namespace Altkom.IGEXAO.MicroCAD.ViewModels
 {
     public class ShellViewModel : BaseViewModel
     {
+        public BaseViewModel SelectedViewModel { get; set; }
+
         public ShellViewModel()
         {
-
+            this.SelectedViewModel = new SchemaViewModel();
         }
     }
 }

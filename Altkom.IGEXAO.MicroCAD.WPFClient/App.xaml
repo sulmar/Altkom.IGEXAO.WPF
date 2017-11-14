@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient"
              StartupUri="Views/ShellView.xaml">
     <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ViewViewModel.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
          
     </Application.Resources>
 </Application>

@@ -25,10 +25,12 @@
                 <Button>Button 3</Button>
             </StackPanel>
             
-            <!--<ContentControl />-->
+          
+            <!--<v:SchemaView />-->
 
-            <v:SchemaView />
+            <!--<ContentControl Content="{Binding SelectedViewModel}" />-->
 
+            <Frame Content="{Binding SelectedViewModel}" />
 
 
         </DockPanel>

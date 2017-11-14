@@ -8,13 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
 
-    <UserControl.DataContext>
-        <vm:SchemaViewModel />
-    </UserControl.DataContext>
-    
     <Grid>
 
-        <Label Content="Schema View"
+        <Label Content="{Binding Schema.Name}"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
                />
