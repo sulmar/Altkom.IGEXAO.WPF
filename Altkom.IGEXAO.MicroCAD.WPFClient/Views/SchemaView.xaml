@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Altkom.IGEXAO.MicroCAD.WPFClient.Views.SchemaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Views"
+             xmlns:vm="clr-namespace:Altkom.IGEXAO.MicroCAD.ViewModels;assembly=Altkom.IGEXAO.MicroCAD.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.DataContext>
+        <vm:SchemaViewModel />
+    </UserControl.DataContext>
+    
+    <Grid>
+
+        <Label Content="Schema View"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               />
+
+    </Grid>
+</UserControl>

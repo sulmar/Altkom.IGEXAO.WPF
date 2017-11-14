@@ -2,7 +2,8 @@
 
 namespace Altkom.IGEXAO.MicroCAD.Models
 {
-    public class Class1
+    public abstract class Base
     {
+
     }
 }

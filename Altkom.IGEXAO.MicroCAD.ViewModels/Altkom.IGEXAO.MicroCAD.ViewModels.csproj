@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.IServices\Altkom.IGEXAO.MicroCAD.IServices.csproj" />
+    <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.MockServices\Altkom.IGEXAO.MicroCAD.MockServices.csproj" />
+    <ProjectReference Include="..\Altkom.IGEXAO.MicroCAD.Models\Altkom.IGEXAO.MicroCAD.Models.csproj" />
+  </ItemGroup>
+
+</Project>
