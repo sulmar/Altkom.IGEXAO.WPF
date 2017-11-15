@@ -7,14 +7,14 @@
         xmlns:vm="clr-namespace:Altkom.IGEXAO.MicroCAD.ViewModels;assembly=Altkom.IGEXAO.MicroCAD.ViewModels"
         xmlns:v="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Views"
         mc:Ignorable="d"
-        DataContext="{DynamicResource ShellViewModel}"
-        d:DataContext="{DynamicResource MockShellViewModel}"
+        DataContext="{StaticResource ShellViewModel}"
+        d:DataContext="{d:DesignInstance vm:MockShellViewModel, IsDesignTimeCreatable=True}"
         Title="ShellView" Height="300" Width="300">
 
-    <Window.Resources>
+    <!--<Window.Resources>
         <vm:ShellViewModel x:Key="ShellViewModel" />
         <vm:MockShellViewModel x:Key="MockShellViewModel" />
-    </Window.Resources>
+    </Window.Resources>-->
     
     <!--<Window.DataContext>
         <vm:ShellViewModel />
@@ -31,6 +31,7 @@
                 <Button>Schema</Button>
                 <Button Command="{Binding ChangeCommand}">Change</Button>
                 <Button Content="Help" Style="{StaticResource HelpButtonStyle}" />
+                
             </StackPanel>
             
           
