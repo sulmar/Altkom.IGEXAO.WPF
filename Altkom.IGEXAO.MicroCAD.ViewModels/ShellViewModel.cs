@@ -35,6 +35,8 @@ namespace Altkom.IGEXAO.MicroCAD.ViewModels
 
         public void ShowWelcome()
         {
+          
+
             SelectedViewModel = new WelcomeViewModel();
         }
 
