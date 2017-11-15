@@ -14,16 +14,20 @@
 
     <DataTemplate DataType="{x:Type m:Switch}">
         <Grid>
+            
             <Rectangle Width="20" Height="20" 
                        Stroke="Black" Fill="Green"
                        StrokeThickness="1"
                        />
+
+            <Label Content="{Binding Name}" />
         </Grid>
     </DataTemplate>
 
     <DataTemplate DataType="{x:Type m:Connection}">
         <Grid>
             <Line X1="0" Y1="0" X2="100" Y2="0" Stroke="Blue" StrokeThickness="5" />
+            <Label Content="{Binding Name}" />
         </Grid>
     </DataTemplate>
     
