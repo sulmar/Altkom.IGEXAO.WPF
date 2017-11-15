@@ -10,10 +10,23 @@
 
     <Grid>
 
-        <Label Content="{Binding Schema.Name}"
+        <!--<Label Content="{Binding Schema.Name}"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
-               />
+               />-->
+
+
+        <DockPanel>
+            <ListBox 
+                DockPanel.Dock="Left"
+                ItemsSource="{Binding Schema.Items}"
+                SelectedItem="{Binding SelectedItem}"
+                >
+
+            </ListBox>
+
+            <Border />
+        </DockPanel>
 
     </Grid>
 </UserControl>

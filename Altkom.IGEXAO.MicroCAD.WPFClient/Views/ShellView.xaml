@@ -23,6 +23,7 @@
                 <Button Command="{Binding ShowWelcomeCommand}">Welcome</Button>
                 <Button>Schema</Button>
                 <Button Command="{Binding ChangeCommand}">Change</Button>
+                <Button Content="Help" Style="{StaticResource HelpButtonStyle}" />
             </StackPanel>
             
           
