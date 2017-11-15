@@ -1,4 +1,5 @@
-﻿using Altkom.IGEXAO.MicroCAD.IServices;
+﻿using Altkom.IGEXAO.MicroCAD.DbServices;
+using Altkom.IGEXAO.MicroCAD.IServices;
 using Altkom.IGEXAO.MicroCAD.MockServices;
 using Altkom.IGEXAO.MicroCAD.Models;
 using System;
@@ -16,7 +17,7 @@ namespace Altkom.IGEXAO.MicroCAD.ViewModels
         private readonly IItemsService itemsService;
 
         public SchemaViewModel()
-            : this(new MockSchemasService(), new MockItemsService())
+            : this(new MockSchemasService(), new DbItemsService())
         {
         }
 

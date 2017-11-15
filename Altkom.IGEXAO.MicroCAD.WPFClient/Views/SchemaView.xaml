@@ -9,7 +9,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
 
-    <Grid>
+    <UserControl.Resources>
+        <vm:MockSchemaViewModel x:Key="SchemaViewModel" />
+    </UserControl.Resources>
+
+    <Grid d:DataContext="{StaticResource SchemaViewModel}">
 
         <!--<Label Content="{Binding Schema.Name}"
                HorizontalAlignment="Center"
