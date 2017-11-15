@@ -1,22 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Resources"
                     xmlns:m="clr-namespace:Altkom.IGEXAO.MicroCAD.Models;assembly=Altkom.IGEXAO.MicroCAD.Models"
-                    >
-
-
-    <DataTemplate DataType="{x:Type m:Item}">
-        <Grid>
-            <Label Content="{Binding Name}" />
-        </Grid>
-    </DataTemplate>
+                    xmlns:local="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Resources">
 
 
     <DataTemplate DataType="{x:Type m:Switch}">
         <Grid>
-            <Rectangle Width="20" Height="20" 
+            <Rectangle Width="50" Height="50" 
                        Stroke="Black" Fill="Green"
-                       StrokeThickness="1"
+                       StrokeThickness="4"
                        />
         </Grid>
     </DataTemplate>

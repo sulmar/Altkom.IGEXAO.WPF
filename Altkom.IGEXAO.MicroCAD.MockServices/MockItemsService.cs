@@ -32,6 +32,14 @@ namespace Altkom.IGEXAO.MicroCAD.MockServices
                     Id = 3,
                     Name = "Connection 1",
                     Location = new Location(150, 100),
+
+                },
+
+                 new Connection
+                {
+                    Id = 4,
+                    Name = "Connection 2",
+                    Location = new Location(50, 50),
                 }
 
             };

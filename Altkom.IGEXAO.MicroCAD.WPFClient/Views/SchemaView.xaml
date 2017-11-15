@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Controls"
              xmlns:local="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Views"
              xmlns:vm="clr-namespace:Altkom.IGEXAO.MicroCAD.ViewModels;assembly=Altkom.IGEXAO.MicroCAD.ViewModels"
              mc:Ignorable="d" 
@@ -23,9 +24,43 @@
                 SelectedItem="{Binding SelectedItem}"
                 >
 
+                <ListBox.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.MergedDictionaries>
+                            <ResourceDictionary Source="../Resources/DataTemplates.xaml" />
+                        </ResourceDictionary.MergedDictionaries>
+                    </ResourceDictionary>
+                </ListBox.Resources>
+
             </ListBox>
 
-            <Border />
+            <!--<Canvas>
+                <Rectangle                     
+                    Canvas.Left="150" Canvas.Top="40"
+                    Width="100" Height="30" Fill="Red" />
+                <Button Canvas.Left="50" Canvas.Top="100">Hello</Button> 
+            </Canvas>-->
+
+            <ItemsControl 
+                ItemsSource="{Binding Schema.Items}" >
+                
+
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <c:AutoCanvas />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.MergedDictionaries>
+                            <ResourceDictionary Source="../Resources/CanvasDataTemplates.xaml" />
+                        </ResourceDictionary.MergedDictionaries>
+                    </ResourceDictionary>
+                </ItemsControl.Resources>
+
+            </ItemsControl>
+
         </DockPanel>
 
     </Grid>

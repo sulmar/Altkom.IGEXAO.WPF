@@ -12,9 +12,7 @@
         <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="MinWidth" Value="{StaticResource Width}" />
-        
     </Style>
-
     
     <!--<Style TargetType="Border">
         <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
