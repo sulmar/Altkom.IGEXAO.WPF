@@ -7,17 +7,21 @@
         xmlns:vm="clr-namespace:Altkom.IGEXAO.MicroCAD.ViewModels;assembly=Altkom.IGEXAO.MicroCAD.ViewModels"
         xmlns:v="clr-namespace:Altkom.IGEXAO.MicroCAD.WPFClient.Views"
         mc:Ignorable="d"
+        DataContext="{DynamicResource ShellViewModel}"
+        d:DataContext="{DynamicResource MockShellViewModel}"
         Title="ShellView" Height="300" Width="300">
 
     <Window.Resources>
-        <vm:MockShellViewModel x:Key="ShellViewModel" />
+        <vm:ShellViewModel x:Key="ShellViewModel" />
+        <vm:MockShellViewModel x:Key="MockShellViewModel" />
     </Window.Resources>
     
-    <Window.DataContext>
+    <!--<Window.DataContext>
         <vm:ShellViewModel />
-    </Window.DataContext>
+    </Window.DataContext>-->
+
     
-    <Grid d:DataContext="{StaticResource ShellViewModel}">
+    <Grid>
 
         <DockPanel>
             <StackPanel 
